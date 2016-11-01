@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: 'PlayfairDisplay', regular;
   color: #626262;
+  height: 100%;
+  position: relative;
 }
 header {
 }
@@ -66,6 +68,7 @@ img {
 }
 #content {
 	margin: 70px;
+	min-height: 100%;
 
 }
 #left-container {
@@ -78,7 +81,7 @@ img {
 }
 h2 {
 	font-family: 'Ubuntu Light', light;
-	color: #959595;
+	color: #b4ad9e;
 	font-size: 14px;
 }
 h3 {
@@ -97,7 +100,52 @@ h4 {
 .photo {
 	margin-top: 50px;
 }
+.social {
+	margin-top: 20px;
+	height: 20px;
+}
+.icon {
+	max-height: 20px;
+	width: auto;
+	padding-right: 16px;
+	padding-bottom: 70px;
+}
+.disc {
+	max-width: 5px;
+	height: auto;
+	margin-right: 22px;
+}
+.post {
+	font-family: 'arial bold', bold;
+	margin-top: 20px;
+}
+.comments {
+	font-family: 'Ubuntu Light', light;
+	font-size:12px;
+	color: #b4ad9e;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+#banner {
+	margin-top: 55px;
+}
+footer {
+	background-color: #d9d9d9;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
 
+.share {
+	float:left;
+	padding-right: 325;
+	font-family: 'Ubuntu Light', light;
+	font-size:14px;
+	color: #b4ad9e;
+}
+	
 
 
 
