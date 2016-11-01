@@ -72,6 +72,10 @@ img {
 	float: left;
 	width: 660px;	
 }
+#right-container {
+	float: right;
+	width: 252px;
+}
 h2 {
 	font-family: 'Ubuntu Light', light;
 	color: #959595;
@@ -79,9 +83,19 @@ h2 {
 }
 h3 {
 	font-size: 30px;
+	
+}
+h4 {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+}
+#bio {
+	font-size: 12px;
 }
 .photo {
-	paddint-top: 50px;
+	margin-top: 50px;
 }
 
 
