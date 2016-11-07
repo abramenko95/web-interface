@@ -8,6 +8,9 @@ body {
 }
 header {
 }
+article {
+	display: inline-block;
+}
 nav {
 	padding-top: 70px;
   	overflow: hidden;
@@ -76,9 +79,14 @@ main {
 }
 selection {
 	float: left;
-	width: 62%;
+	width: 69%;
 	height: 2450px;
-	margin-right: 12%;	
+	margin-right: 5%;	
+}
+.article-text {
+	float: left;
+	width: 90%;
+	margin-right: 10%;
 }
 aside {
 	float: right;
@@ -153,10 +161,12 @@ footer {
 }
 
 .share {
+	float:right;
+	margin-top: 50px;
 	height: 20px;
-	width: 240px;
-	margin-bottom: 20px;
-	margin-left: 51%;
+	width: 30%;
+	margin-bottom: 40px;
+	margin-left: 70%;
 }
 .share-text {
 
