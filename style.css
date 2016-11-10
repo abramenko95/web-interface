@@ -6,10 +6,29 @@ body {
   height: 100%;
   position: relative;
 }
-header {
+@font-face {
+	font-family: Ubuntu Light; 
+	src: local("Ubuntu Light"), url(fonts/Ubuntu-L.ttf);
 }
-article {
-	display: inline-block;
+h1 {
+	margin: 0;
+}
+h2 {
+	font-family: 'Ubuntu Light';
+	color: #b4ad9e;
+	font-size: 14px;
+}
+h3 {
+	font-size: 30px;
+	font-weight: normal;
+	
+}
+h4 {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: normal;
+	font-size: 24px;
 }
 nav {
 	padding-top: 70px;
@@ -17,15 +36,9 @@ nav {
 	max-width: 1061px;
 	margin: 0 auto;
 }
-.logo-box {
+.header__logo-box {
     padding: 0;
 	float: left;
-}
-h1 {
-	margin: 0;
-}
-.logo {
-
 }
 ul {
   margin: 0;
@@ -74,54 +87,65 @@ img {
 }
 main {
 	margin: 0 auto;
-	height: 3250px;
+	height: 100%;
 	max-width: 1061px;
 }
-selection {
-	float: left;
+section {
 	width: 69%;
-	height: 2450px;
-	margin-right: 5%;	
+	height: 100%;
+	float: left;
+	margin-right: 5%;
+	display: inline-block;
 }
-.article-text {
+article {
+	display: inline-block;
+}
+.article__text {
 	float: left;
 	width: 90%;
 	margin-right: 10%;
 }
-aside {
-	float: right;
-	width: 26%;
+.article__text_bold {
+	font-weight: bold;
 }
-@font-face {
-	font-family: Ubuntu Light; 
-	src: local("Ubuntu Light"), url(fonts/Ubuntu-L.ttf);
+.article__text_quote {
+	max-width: 92%;
+	margin: 0 auto;
+	margin-top: 55px;
+	margin-bottom: 33px;
+	font-style: italic;
 }
-h2 {
-	font-family: 'Ubuntu Light';
-	color: #b4ad9e;
-	font-size: 14px;
-}
-h3 {
-	font-size: 30px;
-	font-weight: normal;
-	
-}
-h4 {
-	margin: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-weight: normal;
-	font-size: 24px;
-}
-.bio {
-	font-size: 12,1px;
-}
-.photo {
+.article__photo {
 	margin-top: 50px;
 }
-.social {
+.article__share {
+	float:right;
+	margin-top: 50px;
+	max-height: 20px;
+	width: 30%;
+	margin-bottom: 40px;
+	margin-left: 70%;
+}
+.article__share__text {
+	font-family: 'Ubuntu Light', light;
+	font-size:14px;
+	color: #b4ad9e;
+	float: left;
+}
+.article__share__img {
+	float: right;
+}
+aside {
+	display: inline-block;
+	width: 26%;
+	height: 100%;
+}
+.aside__bio {
+	font-size: 12,1px;
+}
+.aside__social {
 	margin-top: 20px;
-	height: 20px;
+	max-height: 20px;
 	padding-bottom: 50px;
 }
 .icon {
@@ -135,17 +159,17 @@ h4 {
 	height: auto;
 	margin-right: 22px;
 }
-.post {
+.aside__top-posts__post {
 	margin-top: 20px;
 }
-.comments {
+.aside__top-posts__comments {
 	font-family: 'Ubuntu Light';
 	font-size:12px;
 	color: #b4ad9e;
 	margin-top: 10px;
 	margin-left: 30px;
 }
-.banner {
+.aside__banner {
 	max-height: 250px;
 	max-width: 250px;
 	margin: 0 auto;
@@ -159,50 +183,21 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
-
-.share {
-	float:right;
-	margin-top: 50px;
-	height: 20px;
-	width: 30%;
-	margin-bottom: 40px;
-	margin-left: 70%;
-}
-.share-text {
-
-	font-family: 'Ubuntu Light', light;
-	font-size:14px;
-	color: #b4ad9e;
-	float: left;
-}
-.share-img {
-	float: right;
-}
-.quote {
-	max-width: 92%;
-	margin: 0 auto;
-	margin-top: 55px;
-	margin-bottom: 33px;
-	font-style: italic;
-}
-.text-bold {
-	font-weight: bold;
-}
-.footer-main {
+.footer__main {
 	max-width: 1061px;
 	margin: 0 auto;
 	margin-top: 40px;
 }
-.terms {
+.footer__main__left {
 	float: left;
 	color: black;
 	margin-right:20px;
 }
-.follow {
+.footer__main__follow {
 	float: right;
 	color: black;
 }
-.icon-footer {
+.footer__main__follow__icon {
 	max-height: 20px;
 	width: auto;
 	padding-left: 16px;
